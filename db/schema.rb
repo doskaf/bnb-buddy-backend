@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_04_21_040617) do
   end
 
   create_table "listings", force: :cascade do |t|
-    t.string "type"
+    t.string "kind"
     t.integer "bedrooms"
     t.integer "bathrooms"
     t.string "location"

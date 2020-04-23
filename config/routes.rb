@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :bookings
   resources :listings do
     resources :bookings
   end
