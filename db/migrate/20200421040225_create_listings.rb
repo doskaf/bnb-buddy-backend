@@ -1,7 +1,7 @@
 class CreateListings < ActiveRecord::Migration[6.0]
   def change
     create_table :listings do |t|
-      t.string :kind
+      t.string :kind, default: 'Bedroom'
       t.integer :bedrooms
       t.integer :bathrooms
       t.string :location
