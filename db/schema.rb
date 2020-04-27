@@ -15,13 +15,14 @@ ActiveRecord::Schema.define(version: 2020_04_21_040617) do
   create_table "bookings", force: :cascade do |t|
     t.integer "listing_id"
     t.string "guest"
-    t.integer "nights"
+    t.string "check_in"
+    t.string "check_out"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "listings", force: :cascade do |t|
-    t.string "kind", default: "Bedroom"
+    t.string "kind"
     t.integer "bedrooms"
     t.integer "bathrooms"
     t.string "location"

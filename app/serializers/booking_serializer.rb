@@ -1,3 +1,3 @@
 class BookingSerializer < ActiveModel::Serializer
-  attributes :id, :guest, :nights, :listing_id
+  attributes :id, :guest, :check_in, :check_out, :listing_id
 end

@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Listing.create(kind: "House", bedrooms: 3, bathrooms: 2, location: "West LA", price: 57.00)
+Listing.create(kind: "Mobile Home", bedrooms: 1, bathrooms: 1, location: "East Texas", price: 14.00)

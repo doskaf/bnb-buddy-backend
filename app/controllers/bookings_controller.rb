@@ -8,7 +8,11 @@ class BookingsController < ApplicationController
 
     def create
         @booking = @listing.bookings.build(booking_params)
-
+        if @booking.save
+            render json: @listing
+        else
+            render json: {error: 'Listing could not be created'}
+        end
     end
 
     def show
@@ -28,7 +32,7 @@ class BookingsController < ApplicationController
     end
 
     def booking_params
-        params.require(:booking).permit(:guest, :nights)
+        params.require(:booking).permit(:guest, :check_in, :check_out)
     end
 
 end
