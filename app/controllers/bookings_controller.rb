@@ -22,7 +22,8 @@ class BookingsController < ApplicationController
 
     def destroy
         @booking = Booking.find_by(id: params[:id])
-        @booking.delete
+        @booking.destroy
+        render json: @listing
     end
 
     private
