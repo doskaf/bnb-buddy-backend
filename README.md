@@ -17,6 +17,10 @@ And then execute:
 
     $ rake db:migrate
 
-Run
+and
+
+    $ rake db:seed
+
+Finally, run
 
     $ rails s
