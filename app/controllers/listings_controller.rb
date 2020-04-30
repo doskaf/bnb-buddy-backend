@@ -10,7 +10,7 @@ class ListingsController < ApplicationController
         if @listing.save
             render json: @listing
         else
-            render json: {error: 'Object could not be created'}
+            render json: {error: 'Listing could not be created'}
         end
     end
 

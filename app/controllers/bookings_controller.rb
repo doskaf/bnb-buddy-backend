@@ -9,9 +9,9 @@ class BookingsController < ApplicationController
     def create
         @booking = @listing.bookings.build(booking_params)
         if @booking.save
-            render json: @listing
+            render json: @booking
         else
-            render json: {error: 'Listing could not be created'}
+            render json: {error: 'Booking could not be created'}
         end
     end
 
@@ -23,7 +23,7 @@ class BookingsController < ApplicationController
     def destroy
         @booking = Booking.find_by(id: params[:id])
         @booking.destroy
-        render json: @listing
+        render json: @booking
     end
 
     private
