@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_04_21_040617) do
     t.integer "bathrooms"
     t.string "location"
     t.float "price"
+    t.string "photos"
     t.boolean "booked", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

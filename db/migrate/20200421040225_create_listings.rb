@@ -6,6 +6,7 @@ class CreateListings < ActiveRecord::Migration[6.0]
       t.integer :bathrooms
       t.string :location
       t.float :price
+      t.string :photos
       t.boolean :booked, default: false
 
       t.timestamps
